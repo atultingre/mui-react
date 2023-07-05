@@ -5,6 +5,7 @@ import MuiButton from "./components/MuiButton";
 import MuiTextFiled from "./components/MuiTextFiled";
 import MuiRadioButton from "./components/MuiRadioButton";
 import MuiCheckbox from "./components/MuiCheckbox";
+import MuiSwitch from "./components/MuiSwitch";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <MuiSelect />
       <MuiRadioButton />
       <MuiCheckbox />
+      <MuiSwitch/>
     </div>
   );
 }
