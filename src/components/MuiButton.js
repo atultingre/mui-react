@@ -6,7 +6,7 @@ import FormatItalicIcon from '@mui/icons-material/FormatItalic';
 import FormatUnderlinedIcon from '@mui/icons-material/FormatUnderlined';
 
 const MuiButton = () => {
-    const [formats, setFormats] = React.useState(() => ['bold', 'italic', 'underlined'] | null);
+    const [formats, setFormats] = useState(() => ['bold', 'italic', 'underlined'] | null);
 
     const handleFormat = (event, newFormats) => {
       setFormats(newFormats);

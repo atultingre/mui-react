@@ -1,4 +1,4 @@
-import { Box, FormControlLabel, Stack, Switch } from '@mui/material'
+import { Box, FormControlLabel,  Switch } from '@mui/material'
 import React, { useState } from 'react'
 
 const MuiSwitch = () => {
