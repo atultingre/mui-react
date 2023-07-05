@@ -21,14 +21,18 @@ const MuiRadioButton = () => {
                 <FormControlLabel control={<Radio size='small' color='warning'/>} label="0-2" value="0-2"/>
                 <FormControlLabel control={<Radio size='small' color='success'/>} label="0-2" value="0-2"/>
                 <FormControlLabel control={<Radio size='small' color='info'/>} label="0-2" value="0-2"/>
+            </RadioGroup>
             
+            <RadioGroup name='job-experience-group' aria-label='job-experience-group-label' value={value} onChange={handleChange} row>
                 <FormControlLabel control={<Radio size='medium' color='primary'/>} label="3-5" value="3-5"/>
                 <FormControlLabel control={<Radio size='medium' color='secondary'/>} label="3-5" value="3-5"/>
                 <FormControlLabel control={<Radio size='medium' color='error'/>} label="3-5" value="3-5"/>
                 <FormControlLabel control={<Radio size='medium' color='warning'/>} label="3-5" value="3-5"/>
                 <FormControlLabel control={<Radio size='medium' color='success'/>} label="3-5" value="3-5"/>
                 <FormControlLabel control={<Radio size='medium' color='info'/>} label="3-5" value="3-5"/>
+            </RadioGroup>
             
+            <RadioGroup name='job-experience-group' aria-label='job-experience-group-label' value={value} onChange={handleChange} row>
                 <FormControlLabel control={<Radio size='large' color='primary'/>} label="6-10" value="6-10"/>
                 <FormControlLabel control={<Radio size='large' color='secondary'/>} label="6-10" value="6-10"/>
                 <FormControlLabel control={<Radio size='large' color='error'/>} label="6-10" value="6-10"/>
