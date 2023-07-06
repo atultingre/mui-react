@@ -15,6 +15,7 @@ import MuiPaper from "./components/MuiPaper";
 import MuiCard from "./components/MuiCard";
 import MuiAccordion from "./components/MuiAccordion";
 import MuiImageList from "./components/MuiImageList";
+import MuiNavbar from "./components/MuiNavbar";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
       <MuiCard/>
       <MuiAccordion/>
       <MuiImageList/>
+      <MuiNavbar />
     </div>
   );
 }

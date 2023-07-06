@@ -1,5 +1,5 @@
 import React from "react";
-import { ImageList, ImageListItem, Stack, Page, Box, Paper, ImageListItemBar } from "@mui/material";
+import { ImageList, ImageListItem, Stack, Box, Paper, ImageListItemBar } from "@mui/material";
 
 const MuiImageList = () => {
   return (
