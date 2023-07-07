@@ -1,61 +1,68 @@
 import React from "react";
-import { ImageList, ImageListItem, Stack, Box, Paper, ImageListItemBar } from "@mui/material";
+import {
+  ImageList,
+  ImageListItem,
+  Stack,
+  Box,
+  Paper,
+  ImageListItemBar,
+} from "@mui/material";
 
 const MuiImageList = () => {
   return (
-    <Stack spacing={4} display="flex" justifyContent="center" alignItems="center" >
-      <Box width="100" sx={{padding: "10px" , marginTop: "20px"}} >
-      <Paper sx={{  padding : "20px" , textAlign: "center"}} >
-        <h1>Mui Image List</h1>
-        <ImageList sx={{  height: 550 }} cols={3} rowHeight={164} gap={1}>
-          {itemData.map((item) => (
-            <ImageListItem key={item.img}>
-              <img
-                src={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2`}
-                alt={item.title}
-                loading="lazy"
-              />
-              <ImageListItemBar title={item.title}/>
-            </ImageListItem>
-          ))}
-        </ImageList>
+    <Stack
+      spacing={4}
+      display="flex"
+      justifyContent="center"
+      alignItems="center">
+      <Paper sx={{ padding: "2rem", mb: "1.5rem" }}>
+
+        <Box width="100" sx={{ padding: "10px", marginTop: "20px" }}>
+            <h1>Mui Image List</h1>
+            <ImageList sx={{ height: 550 }} cols={3} rowHeight={164} gap={1}>
+              {itemData.map((item) => (
+                <ImageListItem key={item.img}>
+                  <img
+                    src={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2`}
+                    alt={item.title}
+                    loading="lazy"
+                  />
+                  <ImageListItemBar title={item.title} />
+                </ImageListItem>
+              ))}
+            </ImageList>
+        </Box>
+        <Box width="100" sx={{ marginTop: "20px" }}>
+            <h1>Mui Image List</h1>
+            <ImageList variant="woven" sx={{ height: 700 }} cols={3} gap={8}>
+              {itemData.map((item) => (
+                <ImageListItem key={item.img}>
+                  <img
+                    src={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2`}
+                    alt={item.title}
+                    loading="lazy"
+                  />
+                  <ImageListItemBar title={item.title} />
+                </ImageListItem>
+              ))}
+            </ImageList>
+        </Box>
+        <Box width="100" sx={{ padding: "10px", marginTop: "20px" }}>
+            <h1>Mui Image List</h1>
+            <ImageList variant="masonry" sx={{ height: 600 }} cols={3} gap={8}>
+              {itemData.map((item) => (
+                <ImageListItem key={item.img}>
+                  <img
+                    src={`${item.img}?w=248&fit=crop&auto=format&dpr=2`}
+                    alt={item.title}
+                    loading="lazy"
+                  />
+                  <ImageListItemBar title={item.title} />
+                </ImageListItem>
+              ))}
+            </ImageList>
+        </Box>
       </Paper>
-      </Box>
-      <Box width="100" sx={{ marginTop: "20px"}}  >
-      <Paper sx={{  padding : "20px"}}>
-        <h1>Mui Image List</h1>
-        <ImageList variant="woven" sx={{ height: 700 }} cols={3} gap={8}>
-          {itemData.map((item) => (
-            <ImageListItem key={item.img}>
-              <img
-                src={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2`}
-                alt={item.title}
-                loading="lazy"
-              />
-              <ImageListItemBar title={item.title}/>
-            </ImageListItem>
-          ))}
-        </ImageList>
-      </Paper>
-      </Box>
-      <Box width="100" sx={{padding: "10px" , marginTop: "20px"}} >
-      <Paper sx={{  padding : "20px", }}>
-        <h1>Mui Image List</h1>
-        <ImageList variant="masonry" sx={{  height: 600 }} cols={3} gap={8}>
-          {itemData.map((item) => (
-            <ImageListItem key={item.img}>
-              <img
-                src={`${item.img}?w=248&fit=crop&auto=format&dpr=2`}
-                alt={item.title}
-                loading="lazy"
-              />
-              <ImageListItemBar title={item.title}/>
-            </ImageListItem>
-          ))}
-        </ImageList>
-      </Paper>
-      </Box>
-      
     </Stack>
   );
 };

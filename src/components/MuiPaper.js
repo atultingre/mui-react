@@ -4,7 +4,7 @@ import React from "react";
 const MuiPaper = () => {
   return (
     <>
-      <Paper sx={{ padding: "32px" }} elevation={4}>
+      <Paper sx={{ padding: "32px" , mb:"2rem" }} elevation={4}>
         <h1>Mui Paper</h1>
         <Grid container my={4}>
           <Grid item xs={3}>
@@ -141,7 +141,7 @@ const MuiPaper = () => {
           </Grid>
         </Grid>
       </Paper>
-      <Paper sx={{ padding: "32px", mt:"20px" }}>
+      <Paper sx={{ padding: "32px", mb:"2rem" }}>
         <h1>Mui Paper</h1>
         <Grid container my={4}>
           <Grid item xs={3}>

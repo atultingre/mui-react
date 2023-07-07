@@ -13,7 +13,7 @@ import React from "react";
 const MuiCard = () => {
   return (
     <Box width="100">
-      <Paper>
+      <Paper sx={{ padding: "2rem", mb: "1.5rem" }}>
         <Typography variant="h2" padding="10px">
           Mui Card
         </Typography>

@@ -17,28 +17,31 @@ import MuiAccordion from "./components/MuiAccordion";
 import MuiImageList from "./components/MuiImageList";
 import MuiNavbar from "./components/MuiNavbar";
 import MuiMenu from "./components/MuiMenu";
+import { Paper } from "@mui/material";
 
 function App() {
   return (
     <div className="App">
-      <MuiTypography />
-      <MuiButton />
-      <MuiTextFiled />
-      <MuiSelect />
-      <MuiRadioButton />
-      <MuiCheckbox />
-      <MuiSwitch/>
-      <MuiRating/>
-      <MuiAutocomplete/>
-      <MuiBox/>
-      <MuiStack/>
-      <MuiGrid/>
-      <MuiPaper/>
-      <MuiCard/>
-      <MuiAccordion/>
-      <MuiImageList/>
-      <MuiNavbar />
-      <MuiMenu/>
+      <Paper sx={{ padding: "2rem" , mb: "1rem"}}>
+        <MuiTypography />
+        <MuiButton />
+        <MuiTextFiled />
+        <MuiSelect />
+        <MuiRadioButton />
+        <MuiCheckbox />
+        <MuiSwitch />
+        <MuiRating />
+        <MuiAutocomplete />
+        <MuiBox />
+        <MuiStack />
+        <MuiGrid />
+        <MuiPaper />
+        <MuiCard />
+        <MuiAccordion />
+        <MuiImageList />
+        <MuiNavbar />
+        <MuiMenu />
+      </Paper>
     </div>
   );
 }

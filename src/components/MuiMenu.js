@@ -6,6 +6,7 @@ import {
   IconButton,
   Menu,
   MenuItem,
+  Paper,
   Stack,
   Toolbar,
   Typography,
@@ -24,7 +25,8 @@ const MuiMenu = () => {
   };
 
   return (
-    <div>
+    <Paper sx={{padding: "2rem", mb: "1.5rem"}}>
+    <h1>Mui Menu</h1>
       <AppBar position="static" color="primary">
         <Toolbar>
           <IconButton
@@ -78,7 +80,7 @@ const MuiMenu = () => {
           </Menu>
         </Toolbar>
       </AppBar>
-    </div>
+      </Paper>
   );
 };
 

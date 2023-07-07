@@ -18,7 +18,7 @@ const MuiAccordion = () => {
 
   return (
     <Box>
-      <Paper sx={{ padding: "20px" }}>
+     <Paper sx={{ padding: "2rem", mb: "1.5rem" }}>
         <Typography variant="h2" gutterBottom>
           Mui Accordion
         </Typography>

@@ -1,4 +1,4 @@
-import { Box, FormControlLabel,  Switch } from '@mui/material'
+import { Box, FormControlLabel,  Paper,  Switch } from '@mui/material'
 import React, { useState } from 'react'
 
 const MuiSwitch = () => {
@@ -8,7 +8,9 @@ const MuiSwitch = () => {
     }
     console.log({checked})
   return (
-    <Box>
+
+    <Paper sx={{ padding: "2rem", mb: "1.5rem" }}>
+
         <h1>Mui Switch</h1>
         <Box>
             <FormControlLabel label="Dark Mode Small" control={<Switch checked={checked} onChange={handleChange} color='primary' size='small'/>}/>
@@ -34,7 +36,8 @@ const MuiSwitch = () => {
             <FormControlLabel label="Dark Mode Large" control={<Switch checked={checked} onChange={handleChange} color='info' size='large'/>}/>
             <FormControlLabel label="Dark Mode Large" control={<Switch checked={checked} onChange={handleChange} color='success' size='large'/>}/>
         </Box>
-    </Box>
+    </Paper>
+
   )
 }
 
